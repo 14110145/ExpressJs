@@ -1,0 +1,10 @@
+h1 This is a list.
+a(href="/users/create") New user.
+form(action="/users/search", method= "get")
+    input(type="text", name="q", value= question)
+    button Search
+ul
+    each user in users
+        li
+            span= user.name
+            a(href="/users/" + user.id) View
