@@ -16,7 +16,7 @@ app.use(express.static('public'))
 
 app.get('/', function(req , res){
     res.render('index.pug',{
-        name: 'LTP-2'
+        name: 'Lam Phu'
     });
 });
 app.use('/users', userRoute);

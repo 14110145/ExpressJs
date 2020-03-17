@@ -4,4 +4,12 @@ html
         link(rel="stylesheet", href="/style/style.css")
     body
         .container
+            nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+                .collapse.navbar-collapse#navbarTogglerDemo01
+                    a.navbar-brand(href="/") LTP
+                    ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+                        li.nav-item.active
+                        a.nav-link(href='/users') User list
+                        li.nav-item
+                        a.nav-link(href='#') Link
             block content

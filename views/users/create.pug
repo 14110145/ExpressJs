@@ -3,6 +3,9 @@ extends ../layouts/common.layout.pug
 block content
     h1 Create user
     form(action="/users/create", method="post")
-        label Name:
-        input(name="name" ,type="text")
-        button Create
+        .form-group.row
+            label.col-sm-1.col-form-label(for="staticEmail") Username
+            .col-sm-6
+                input.form-control-plaintext(name="name" ,type="text", placeholder=" User-name.")
+
+        button.btn.btn-primary Create
