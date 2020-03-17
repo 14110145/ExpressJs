@@ -3,11 +3,12 @@ extends ../layouts/common.layout.pug
 block content
     h1 This is a list.
     a(href="/users/create") New user.
-    form(action="/users/search", method= "get")
-        input(type="text", name="q", value= question)
-        button Search
+    nav.navbar.navbar-light.bg-light
+        form.form-inline(action="/users/search", method= "get")
+            input.form-control.mr-sm-2(type="text", name="q", value= question, placeholder="Search")
+            button.btn.btn-outline-success.my-2.my-sm-0(type = "submit") Search
     ul
-        each user in users
+         each user in users
             li
                 span= user.name
                 a(href="/users/" + user.id) View
