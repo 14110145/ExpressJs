@@ -1,11 +1,18 @@
 extends ../layouts/common.layout.pug
 
 block content
-    h1 Create user
+    h1.pt-5 Create user
     form(action="/users/create", method="post")
         .form-group.row
             label.col-sm-1.col-form-label(for="staticEmail") Username
             .col-sm-6
-                input.form-control-plaintext(name="name" ,type="text", placeholder=" User-name.")
+                input.form-control-plaintext(id="staticEmail" ,name="name" ,type="text", placeholder=" User-name.", value= values ? values.name : "")
+        .form-group.row
+            label.col-sm-1.col-form-label(for="staticPhone") Phone
+            .col-sm-6
+                input.form-control-plaintext(id="staticPhone" ,name= "phone",type="text", placeholder=" Phone number.", value= values ? values.phone : "")
 
         button.btn.btn-primary Create
+    if errors
+        each error in errors   
+            .alert.alert-danger= error

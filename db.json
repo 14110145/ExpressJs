@@ -2,23 +2,13 @@
   "users": [
     {
       "name": "Lam",
-      "id": "it4UXPZA"
+      "phone": "0777897899",
+      "id": "VIsZQLQe"
     },
     {
       "name": "Toan",
-      "id": "lHRo2prZ"
-    },
-    {
-      "name": "Phu",
-      "id": "Cm64iOpJ"
-    },
-    {
-      "name": "Lam-2",
-      "id": "lWqoc6E1"
-    },
-    {
-      "name": "asd",
-      "id": "rEI-syog"
+      "phone": "0998876543",
+      "id": "bPA1ImZg"
     }
   ]
 }
