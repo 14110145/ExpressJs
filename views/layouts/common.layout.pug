@@ -11,5 +11,8 @@ html
                     a.nav-link(href='/users') User list
                     li.nav-item
                     a.nav-link(href='#') Link
+            if(user)
+                h4 
+                    p.badge.badge-secondary= user.name
         .container
             block content
