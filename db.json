@@ -13,7 +13,9 @@
     {
       "name": "Phu",
       "phone": "0334455667",
-      "id": "pD9JDws1"
+      "id": "pD9JDws1",
+      "email": "phu@gmail.com",
+      "password": "9900"
     }
   ]
 }

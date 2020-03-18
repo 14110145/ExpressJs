@@ -1,0 +1,18 @@
+extends ../layouts/common.layout.pug
+
+block content
+    h1.pt-5 Login
+    form(action="/auth/login", method="post")
+        .form-group.row
+            label.col-sm-1.col-form-label(for="Email") Email
+            .col-sm-6
+                input.form-control-plaintext(id="Email" ,name="email" ,type="text", placeholder=" Email", value= values ? values.email : "")
+        .form-group.row
+            label.col-sm-1.col-form-label(for="Password") Password
+            .col-sm-6
+                input.form-control-plaintext(id="Password" ,name= "password",type="password", placeholder=" Password", value= values ? values.password : "")
+
+        button.btn.btn-primary Login
+    if errors 
+        each error in errors   
+            .alert.alert-danger= error
