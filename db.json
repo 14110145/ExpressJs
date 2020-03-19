@@ -15,12 +15,18 @@
       "phone": "0334455667",
       "id": "pD9JDws1",
       "email": "phu@gmail.com",
-      "password": "8af95fe2ab1a54b488ef8efb3f3b0797"
+      "password": "8af95fe2ab1a54b488ef8efb3f3b0797",
+      "avatar": "uploads/28294a0e9350b0b217b72d49a5681da1"
     },
     {
       "name": "Lam",
       "phone": "9900",
       "id": "Y3m5qTonj"
+    },
+    {
+      "name": "PhuAvatar",
+      "phone": "0909090909",
+      "id": "Of8u-oGLT"
     }
   ],
   "products": [

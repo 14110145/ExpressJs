@@ -2,7 +2,7 @@ extends ../layouts/common.layout.pug
 
 block content
     h1.pt-5 Create user
-    form(action="/users/create", method="post")
+    form(action="/users/create", method="post", enctype="multipart/form-data")
         .form-group.row
             label.col-sm-1.col-form-label(for="staticEmail") Username
             .col-sm-6
@@ -11,7 +11,10 @@ block content
             label.col-sm-1.col-form-label(for="staticPhone") Phone
             .col-sm-6
                 input.form-control-plaintext(id="staticPhone" ,name= "phone",type="text", placeholder=" Phone number.", value= values ? values.phone : "")
-
+        .form-group.row
+            label.col-sm-1.col-form-label(for="staticAvatar") Avatar
+            .col-sm-6
+                input.form-control-file(id="staticAvatar" ,name= "avatar", type="file")
         button.btn.btn-primary Create
     if errors
         each error in errors   
