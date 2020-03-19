@@ -1,7 +1,5 @@
 require('dotenv').config();
 
-console.log(process.env.SESSION);
-
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -12,6 +10,7 @@ var authMiddleware = require('./middlewares/auth.middleware');
 
 var userRoute = require('./routes/user.route');
 var authRoute = require('./routes/auth.route');
+var productRoute = require('./routes/product.route');
 
 var db = require('./db');
 
@@ -26,7 +25,7 @@ app.use(cookieParser(process.env.SESSION));
 
 app.use('/auth', authRoute);
 app.use('/users', authMiddleware.requireAuth , userRoute);
-
+app.use('/products', productRoute);
 
 app.get('/', function(req , res){
     res.render('index.pug',{

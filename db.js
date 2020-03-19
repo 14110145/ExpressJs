@@ -4,7 +4,7 @@ var adapter = new Filesync('db.json');
 db = low(adapter);
 
 // Set some defaults (required if your JSON file is empty)
-db.defaults({ users: []})
+db.defaults({ users: [], products: []})
   .write()
 
   module.exports = db;

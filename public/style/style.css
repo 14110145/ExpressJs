@@ -5,3 +5,7 @@
 a:hover{
     text-decoration: none;
 }
+.card{
+    display: inline-block;
+    margin-bottom: 10px;
+}
