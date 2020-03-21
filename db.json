@@ -29,6 +29,28 @@
       "id": "Of8u-oGLT"
     }
   ],
+  "sessions": [
+    {
+      "id": "SAjjesyEN"
+    },
+    {
+      "id": "Cyvmp6638",
+      "cart": {
+        "e846a9c1-78ab-487c-9ffc-040262e7de8e": 39,
+        "900f8336-88bc-49bc-9806-864069b9b351": 1,
+        "dde6de7f-dcba-44cd-8a01-09cdd1debae0": 2
+      }
+    },
+    {
+      "id": "Hf4c3ST85"
+    },
+    {
+      "id": "_m38PvxN9"
+    },
+    {
+      "id": "CGuAhSubq"
+    }
+  ],
   "products": [
     {
       "id": "e846a9c1-78ab-487c-9ffc-040262e7de8e",

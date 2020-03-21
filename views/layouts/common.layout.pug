@@ -11,6 +11,9 @@ html
                     a.nav-link(href='/users') User list
                     li.nav-item
                     a.nav-link(href='/products') Products
+                    li.nav-item
+                    a.nav-link Card #{countCart}
+
             if(user)
                 h4 
                     p.badge.badge-secondary= user.name
