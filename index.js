@@ -16,6 +16,7 @@ var userRoute = require('./routes/user.route');
 var authRoute = require('./routes/auth.route');
 var productRoute = require('./routes/product.route');
 var cartRoute = require('./routes/cart.route');
+var apiProductRoute = require('./api/routes/product.route')
 
 var db = require('./db');
 
@@ -25,6 +26,7 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use('/api/products',apiProductRoute);
 app.use(express.static('public'));
 app.use(cookieParser(process.env.SESSION));
 app.use(sessionMiddleware);
